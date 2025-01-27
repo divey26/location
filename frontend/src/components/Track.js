@@ -56,12 +56,27 @@ const Track = () => {
   }, [watchId, isTracking]);  // Track both watchId and isTracking
 
   return (
-    <div>
-      <h1>Tracking Your Location</h1>
+    <div style={{ textAlign: 'center', marginTop: '20px' }}>
+      <h1 style={{ color: '#4CAF50' }}>Tracking Your Location</h1>
       {!isTracking ? (
-        <button onClick={startTracking} style={{ display: 'block', margin: '20px' }}>Start Tracking</button>
+        <button
+          onClick={startTracking}
+          style={{
+            display: 'block', 
+            margin: '20px auto', 
+            padding: '10px 20px', 
+            fontSize: '16px', 
+            backgroundColor: '#007BFF', 
+            color: '#fff', 
+            border: 'none', 
+            borderRadius: '5px', 
+            cursor: 'pointer'
+          }}
+        >
+          Start Tracking
+        </button>
       ) : (
-        <p>Tracking in progress...</p>
+        <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#FF6347' }}>Tracking in progress...</p>
       )}
     </div>
   );

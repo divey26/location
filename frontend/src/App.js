@@ -8,9 +8,22 @@ const App = () => {
       <Routes>
         <Route path="/track" element={<Track />} />
         <Route path="/" element={
-          <div>
+          <div style={{ textAlign: 'center', marginTop: '50px' }}>
             <h1>Welcome to Employee Tracking App</h1>
-            <a href="http://localhost:5000/auth/google">Login with Google</a>
+            <p>Login to track your location</p>
+            <a 
+              href="http://localhost:5000/auth/google" 
+              style={{
+                padding: '10px 20px',
+                backgroundColor: '#007BFF',
+                color: '#fff',
+                textDecoration: 'none',
+                borderRadius: '5px',
+                fontSize: '16px',
+              }}
+            >
+              Login with Google
+            </a>
           </div>
         } />
       </Routes>
