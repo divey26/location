@@ -9,6 +9,8 @@ const App = () => {
         <Route path="/track" element={<Track />} />
         <Route path="/" element={
           <div style={{ textAlign: 'center', marginTop: '50px' }}>
+           <h1>LOTRACK</h1>
+
             <h1>Welcome to Employee Tracking App</h1>
             <p>Login to track your location</p>
             <a 
